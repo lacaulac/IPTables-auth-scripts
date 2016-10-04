@@ -1,0 +1,4 @@
+#!/bin/sh
+iptauth $(echo $SSH_CLIENT | awk '{print $1}') $1
+#iptables -I INPUT -p tcp -s $1 --dport 3223 -j ACCEPT
+
